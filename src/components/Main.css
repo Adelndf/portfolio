@@ -1,0 +1,103 @@
+.main {
+  height: calc(100vh - 60px);
+}
+.main .container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.main__text {
+  flex: 1;
+}
+.main__text h1 {
+  font-size: calc(var(--font-size-xlg) + 0.2rem);
+  font-weight: var(--font-medium);
+  line-height: 1;
+  color: var(--fff-clr);
+}
+.main__text p {
+  font-size: calc(var(--font-size-m) + 0.2rem);
+  font-weight: var(--font-light);
+  margin-top: 1rem;
+  line-height: 1.3;
+  letter-spacing: 1px;
+  color: var(--light-clr);
+}
+.main__text p > .yellow {
+  color: rgb(255, 249, 162);
+}
+.main__text p > .blue {
+  color: rgb(162, 176, 255);
+}
+.main__text p > .green {
+  color: rgb(162, 255, 162);
+}
+
+.main__svg {
+  flex: 1;
+}
+.main__icons {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.main__icons a {
+  text-decoration: none;
+  color: var(--bg-clr);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--light-clr);
+}
+.main__icons a:hover {
+  background-color: var(--fff-clr);
+}
+.main__icons a .MuiSvgIcon-root {
+  transition: all 0.15s ease-out;
+}
+.main__icons a:hover .MuiSvgIcon-root {
+  transform: rotate(5deg) scale(1.2);
+}
+
+@media (max-width: 48em) {
+  .main .container {
+    position: relative;
+  }
+  .main__text {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    z-index: 2;
+  }
+  .main__text h1 {
+    font-size: var(--font-size-xlg);
+  }
+  .main__text p {
+    font-size: var(--font-size-m);
+    margin: 2.5rem 1rem;
+  }
+  .main__icons {
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    z-index: 2;
+  }
+  .main__svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+  }
+}

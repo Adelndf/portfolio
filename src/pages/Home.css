@@ -1,0 +1,23 @@
+.goUpBtn {
+  position: fixed;
+  right: 2rem;
+  bottom: -3rem;
+  opacity: 0;
+  width: 40px;
+  height: 40px;
+  background: var(--light-clr);
+  padding: 7px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all var(--transition-300);
+  z-index: 99;
+}
+.goUpBtn img {
+  width: 100%;
+  object-fit: contain;
+  transform: rotate(-90deg);
+}
+.goUpBtn.show {
+  bottom: 3rem;
+  opacity: 0.9;
+}
