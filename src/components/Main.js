@@ -3,6 +3,7 @@ import BgAnimation from "./BgAnimation";
 import "./Main.css";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
 
 function Main() {
   return (
@@ -34,6 +35,13 @@ function Main() {
               rel="noreferrer"
             >
               <GitHubIcon />
+            </a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/adel-naddaf-727859214/"
+              rel="noreferrer"
+            >
+              <LinkedInIcon />
             </a>
           </div>
         </div>

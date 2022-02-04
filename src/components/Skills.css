@@ -13,9 +13,9 @@
   flex: 2;
 }
 .skills__leftWrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
 }
 .skill__icon {
   display: flex;
@@ -27,6 +27,10 @@
   font-size: var(--font-size-20);
   color: var(--fff-clr);
   font-weight: var(--font-light);
+}
+.skill__icon img {
+  max-height: 32px;
+  object-fit: contain;
 }
 .skills__right {
   flex: 1;

@@ -28,9 +28,9 @@ function Skills() {
           <div className="skills__left">
             <div className="skills__leftWrapper">
               {skills.map((skill, index) => (
-                <div key={index}>
+                <>
                   <Fade>
-                    <div className="skill__box">
+                    <div className="skill__box" key={index}>
                       <div className="skill__icon">
                         <img src={skill.icon} alt="icon" />
                         <h2>{skill.skill}</h2>
@@ -38,17 +38,17 @@ function Skills() {
                       <Progress progress={skill.prog} />
                     </div>
                   </Fade>
-                </div>
+                </>
               ))}
             </div>
           </div>
-          <div className="skills__right">
+          {/* <div className="skills__right">
             <Fade>
               <div className="skills__imgWrapper">
                 <img src={skillImg} alt="skillImg" />
               </div>
             </Fade>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

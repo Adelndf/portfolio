@@ -6,6 +6,10 @@ import skillIcon1 from "../assets/images/html_icon.png";
 import skillIcon2 from "../assets/images/css_icon.png";
 import skillIcon3 from "../assets/images/js_icon.png";
 import skillIcon4 from "../assets/images/react_icon.png";
+import mongoDB from "../assets/images/mongoDB.png";
+import nextJs from "../assets/images/next.png";
+import redux from "../assets/images/redux.png";
+import node from "../assets/images/node.png";
 
 export const menuDate = [
   {
@@ -49,7 +53,7 @@ export const myProjects = [
 export const skills = [
   {
     skill: "HTML5",
-    prog: "90",
+    prog: "93",
     icon: skillIcon1,
   },
   {
@@ -66,5 +70,25 @@ export const skills = [
     skill: "React.js",
     prog: "75",
     icon: skillIcon4,
+  },
+  {
+    skill: "Next.js",
+    prog: "75",
+    icon: nextJs,
+  },
+  {
+    skill: "MongoDB",
+    prog: "60",
+    icon: mongoDB,
+  },
+  {
+    skill: "Redux",
+    prog: "60",
+    icon: redux,
+  },
+  {
+    skill: "Node.js (express)",
+    prog: "55",
+    icon: node,
   },
 ];

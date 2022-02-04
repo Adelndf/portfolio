@@ -36,9 +36,10 @@ function About() {
                 <h2>Get to know me more</h2>
                 <p>
                   Hi , I'm Adel from Syria , 24 years old , I'm a front-end
-                  developer, learned programming through self-teaching
-                  (Self-Taught) and discovered that coding is my passion , my
-                  goal is to be the best.
+                  developer with some back-end knowledge in (MERN) stack,
+                  learned programming through self-teaching (Self-Taught) and
+                  discovered that coding is my passion , my goal is to be the
+                  best.
                 </p>
                 <a href={CvPdf} download>
                   Donwload CV
