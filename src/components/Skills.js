@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 import "./Skills.css";
-import skillImg from "../assets/images/skills.png";
 import Progress from "./Progress";
 import { skills } from "../constants/constants";
 import Fade from "react-reveal/Fade";
