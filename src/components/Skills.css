@@ -53,8 +53,13 @@
   }
 }
 
-@media (max-width: 767px) {
-  .skills__right {
+@media (max-width: 567px) {
+  /* .skills__right {
     display: none;
+  } */
+  .skills__leftWrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
   }
 }
